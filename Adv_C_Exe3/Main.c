@@ -29,22 +29,22 @@ void main()
 	printStackForChecks(&mainTry);
     destroyStack(&mainTry);
 
-    //int data[SIZE] = { 32,4,2,57,21,0,3,6 };
+    int data[SIZE] = { 32,4,2,57,21,0,3,6 };
 
-    ////initialize que
-    //Queue* myList = (Queue*)malloc(sizeof(Queue));
-    //initQueue(myList);
+    //initialize que
+    Queue* myList = (Queue*)malloc(sizeof(Queue));
+    initQueue(myList);
 
-    ////add elements to que
-    //for (int i = 0; i < SIZE; i++) {
-    //    enqueue(myList, data[i]);
-    //}
+    //add elements to que
+    for (int i = 0; i < SIZE; i++) {
+        enqueue(myList, data[i]);
+    }
 
-    ////check que functions
-    //checkQueueFunctions(myList);
+    //check que functions
+    checkQueueFunctions(myList);
 
-    ////release que
-    //free(myList);
+    //release que
+    free(myList);
 
 }
 
